@@ -20,6 +20,9 @@ import { sharedStylesheetJitUrl } from '@angular/compiler';
 })
 export class PersonasComponent{
     agregarPersona = false;
+    agregarPersonaStatus = "No se ha agregado ninguna persona";
+
+
     constructor(){
         setTimeout(
             ()=>{
@@ -27,4 +30,10 @@ export class PersonasComponent{
             }
             ,3000);
     }
+
+    onCrearPersona(){
+        this.agregarPersonaStatus = "Persona agregada";
+    }
+        
+    
 }
