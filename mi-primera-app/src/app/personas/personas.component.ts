@@ -19,5 +19,12 @@ import { sharedStylesheetJitUrl } from '@angular/compiler';
 
 })
 export class PersonasComponent{
-    
+    agregarPersona = false;
+    constructor(){
+        setTimeout(
+            ()=>{
+                this.agregarPersona = true;
+            }
+            ,3000);
+    }
 }
