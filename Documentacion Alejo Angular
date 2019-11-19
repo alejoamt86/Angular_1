@@ -1,0 +1,61 @@
+Angular
+
+Prerequisitos
+	nodejs
+
+Instalar angular de forma global
+	npm install -g @angular/cli
+
+mi primera aplicacion
+	ng new mi-primera-app
+		routing N
+		css
+	cd mi-primera-app
+		levantamos la app
+			ng serve -o = ng serve --open
+		cerrar el servidor
+			ctrl + C
+Instalamos visual estudio
+	desde la consola de VS
+
+6
+Flujo para levantar una app
+	main.ts (AppModule) -> app.module.ts (NGModule->bootstrap: [AppComponent]) -> app.component.ts (selector: 'app-root',templateUrl: './app.component.html',styleUrls: ['./app.component.css'])
+	index.htlm (app-root) -> app.component.ts
+
+7 Plugins
+	Angular Snippets 8
+	Angular 8 Snippets
+	Angular language Service
+	Angular 2 TypeScript Emmet
+	Boostrap 4, Font awesome
+
+8 Creacion nuevo componente
+	 en app creamos subcarpetas por cada componente
+	 carpeta personas -> personas.component.ts
+	 	 Comp tab -> import { Component } from '@angular/core';
+	 	 para poder utilizar un nuevo componete lo debemos de declarar o registrar en app.module.ts
+	 	 Para usarlo en el app.component.html
+
+	 	 atajo ctr+shif+ñ abre la consola
+
+9 Creando un nuevo componente CLI
+	en consola ng g c persona = ng generate component persona
+	se llamo desde el personas.component.html
+
+10 Componentes en linea
+	si se desea en linea ng generate c --inline-style (alias -s) --inline-template (alias -t)
+
+11 instalando Bootstrap
+	npm install bootstrap --save
+	npm install jquery --save
+	npm install popper.js --save
+	angular.json ->
+		styles "node_modules/bootstrap/dist/css/bootstrap.min.css"
+		"scripts": [
+              "node_modules/jquery/dist/css/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+
+12
