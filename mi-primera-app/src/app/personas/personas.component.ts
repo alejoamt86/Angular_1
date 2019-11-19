@@ -21,6 +21,7 @@ import { sharedStylesheetJitUrl } from '@angular/compiler';
 export class PersonasComponent{
     agregarPersona = false;
     agregarPersonaStatus = "No se ha agregado ninguna persona";
+    tituloPersona = "";
 
 
     constructor(){
@@ -35,5 +36,7 @@ export class PersonasComponent{
         this.agregarPersonaStatus = "Persona agregada";
     }
         
-    
+    onModificaPersona(){
+        this.tituloPersona = (<HTMLInputElement>event.target).value
+    }
 }
