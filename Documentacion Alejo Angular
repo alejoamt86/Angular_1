@@ -51,11 +51,66 @@ Flujo para levantar una app
 	npm install jquery --save
 	npm install popper.js --save
 	angular.json ->
-		styles "node_modules/bootstrap/dist/css/bootstrap.min.css"
-		"scripts": [
-              "node_modules/jquery/dist/css/jquery.slim.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+		"styles": [
+          "src/styles.css",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css"
+        ],
+        "scripts": [
+          "node_modules/jquery/dist/jquery.slim.min.js",
+          "node_modules/popper.js/dist/umd/popper.min.js",
+          "node_modules/bootstrap/dist/js/bootstrap.min.js"
+        ]
 
 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+19 App Caculadora
+	crear proyecto
+		ng new calculadora-app
+		routin no
+		css
+
+		modulo forms
+			app.modules.ts
+				import {FormsModule} from '@angular/forms';
+
+				FormsModule
+
+
+		instalamos bootstrap
+			npm install bootstrap --save
+			npm install jquery --save
+			npm install popper.js --save
+			angular.json ->
+				"styles": [
+	              "src/styles.css",
+	              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+	            ],
+	            "scripts": [
+	              "node_modules/jquery/dist/jquery.slim.min.js",
+	              "node_modules/popper.js/dist/umd/popper.min.js",
+	              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+	            ]
+
+
+ 
+
+
+
+
+
+
+
+
+
