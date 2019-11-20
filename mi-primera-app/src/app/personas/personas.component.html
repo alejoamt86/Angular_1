@@ -2,13 +2,21 @@
     <div class="row">
         <div class="col">
             <label>Nombre Persona</label>
+            <!-- event binding
             <input 
             type="text" 
             class="form-control"
             (input)="onModificaPersona($event)"
             >
-            {{tituloPersona}}
+            {{tituloPersona}} -->
 
+            <input 
+            type="text" 
+            class="form-control"
+            [(ngModel)] = "tituloPersona"
+            >
+            {{tituloPersona}}
+            
 
             <h1>Listado de personas</h1>
             <button class="btn btn-primary" 
