@@ -2,17 +2,7 @@
 
 
   <h1>{{title}}</h1>
+  <app-formulario (sumar)="onSumar($event)" ></app-formulario>
 
-  <form>
-    <div class="form-group">
-      <label>Operando A</label>
-      <input type="number" class="form-control" placeholder="Escribe opernado A" [(ngModel)]="operandoA"
-        name="operandoA">
-      <label>Operando B</label>
-      <input type="number" class="form-control" placeholder="Escribe opernado B" [(ngModel)]="operandoB"
-        name="operandoB">
-    </div>
-    <button type="submit" class="btn btn-primary" (click)="onSumar()">Sumar</button>
-    <app-resultado [resultado] = "resultado"></app-resultado>
-  </form>
+  <app-resultado [resultado] = "resultado"></app-resultado>
 </div>
